@@ -1,0 +1,6 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+127.0.0.1	localhost x230 x230.localdomain
+::1	1 	localhost x230 x230.localdomain
+
+93.188.2.51	www.ligatuga.com ligatuga.com

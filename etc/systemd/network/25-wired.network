@@ -1,0 +1,8 @@
+[Match]
+Name=enp025
+
+[Network]
+DHCP=ipv4
+
+[DHCP]
+RouteMetric=10
