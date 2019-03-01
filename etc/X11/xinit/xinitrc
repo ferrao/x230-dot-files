@@ -50,5 +50,6 @@ fi
 
 xset r rate 200 60
 xbindkeys
+udiskie &
 compton -Cb 
 bspwm 
