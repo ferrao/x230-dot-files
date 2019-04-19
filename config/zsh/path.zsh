@@ -13,5 +13,8 @@ export NVM_DIR="$HOME/.nvm"
 # Ruby Path
 export PATH=$PATH:/home/ferrao/.gem/ruby/2.6.0/bin
 
+# Python Path
+export PATH=$PATH:/home/ferrao/.local/bin
+
 # Z
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh

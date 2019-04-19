@@ -1,0 +1,1 @@
+export PASSWORD_STORE_X_SELECTION=primary
