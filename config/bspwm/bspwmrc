@@ -35,5 +35,5 @@ bspc config gapless_monocle      true
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 
-feh --bg-center $HOME/Images/backgrounds/default.jpg
+feh --bg-fill $HOME/Images/backgrounds/default.jpg
 $HOME/.config/polybar/launch.sh
