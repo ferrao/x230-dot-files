@@ -61,7 +61,7 @@ set shiftwidth=4 " number of spaces to use for autoindent
 set shiftround " round indent to multiples of shiftwidth
 set expandtab " insert tab with the right amount of spacing
 set wrap
-set textwidth=120
+set textwidth=100
 set formatoptions=qrn1
 set colorcolumn=80 " visual indicator of 80 column
 
@@ -153,18 +153,19 @@ let g:airline#extensions#tabline#enabled = 1
 " formatter
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-      \  'javascript': ['prettier', 'eslint'],
-      \  'jsx': ['prettier', 'eslint'],
-      \  'flow': ['prettier'],
-      \  'typescript': ['prettier'],
-      \  'css': ['prettier'],
-      \  'less': ['prettier'],
-      \  'scss': ['prettier'],
-      \  'json': ['prettier'],
-      \  'graphql': ['prettier'],
-      \  'markdown': ['prettier'],
-             \ }
-let g:ale_javascript_prettier_options = '--print-width 100 --tab-width 4 --single-quote'
+    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \  'javascript': ['prettier', 'eslint'],
+    \  'jsx': ['prettier', 'eslint'],
+    \  'flow': ['prettier'],
+    \  'typescript': ['prettier'],
+    \  'css': ['prettier'],
+    \  'less': ['prettier'],
+    \  'scss': ['prettier'],
+    \  'json': ['prettier'],
+    \  'graphql': ['prettier'],
+    \  'markdown': ['prettier'],
+    \ }
+"let g:ale_javascript_prettier_options = '--print-width 100 --tab-width 4 --single-quote'
 
 " file browser
 "nnoremap <silent> <Leader><Space> :NERDTreeToggle<Enter>

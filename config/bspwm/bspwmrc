@@ -1,7 +1,4 @@
 #! /bin/sh -x
-
-PANEL_HOME=~/.config/bspwm/panel
-
 if xrandr -q | grep -w connected | grep DP1; then
 	SINGLE_DISPLAY="false"
 else
@@ -19,6 +16,10 @@ if ! $SINGLE_DISPLAY; then
 		bspc monitor LVDS1 --swap DP1
 	fi
 fi
+
+bspc config remove_disabled_monitor true
+bspc config remove_unplugged_monitor true
+bspc config merge_overlapping_monitors [false, true]
 
 sxhkd &
 
