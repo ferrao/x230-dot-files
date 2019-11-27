@@ -8,6 +8,9 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bars
 polybar topbar &
-#polybar bar2 &
+
+if bspc query -M --names | grep DP1; then
+    polybar monitor &
+fi
 
 echo "Bars launched..."
