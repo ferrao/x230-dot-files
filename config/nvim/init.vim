@@ -35,6 +35,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mhinz/vim-mix-format'
 
 
 " file browser
@@ -165,6 +166,7 @@ let g:ale_fixers = {
     \  'graphql': ['prettier'],
     \  'markdown': ['prettier'],
     \ }
+let g:mix_format_on_save=1
 
 " file browser
 nnoremap <silent> <Leader><Space> :NERDTreeToggle<Enter>
