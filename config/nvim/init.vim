@@ -18,12 +18,12 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'othree/html5.vim'
 Plug 'JulesWang/css.vim'
 Plug 'pangloss/vim-javascript'
-"Plug 'othree/yajs.vim' " alternative js syntax plugin, not working well for me
 Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json'
 Plug 'othree/jsdoc-syntax.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'elixir-editors/vim-elixir'
 Plug 'Valloric/MatchTagAlways'
 Plug 'lilydjwg/colorizer'
 
