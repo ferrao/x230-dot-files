@@ -38,3 +38,4 @@ bspc config gapless_monocle      true
 
 feh --bg-fill $HOME/Images/backgrounds/default.jpg
 $HOME/.config/polybar/launch.sh
+wmname LG3D

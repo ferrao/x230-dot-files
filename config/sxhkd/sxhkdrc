@@ -18,12 +18,17 @@ super + space
 alt + space
 	rofi -show window -show-icons
 
+# password fetcher
 super + shift + p
     passmenu --type
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# desktop screenshot
+alt + shift + 4
+    import screenshot.png
 
 #
 # bspwm hotkeys

@@ -106,8 +106,11 @@ set directory=~/.vim/tmp
 set termguicolors " enable true colors
 let $GIT_EDITOR = 'nvr -cc split --remote-wait'
 let $EDITOR = 'nvr -l' " prevent nested vim editors inside the temrinal
-tnoremap <silent> <leader><esc> <C-\><C-n><esc><CR>
 nnoremap <silent> <leader>t :vertical botright Ttoggle<CR><C-w>l
+nnoremap <silent> <leader>rf :TREPLSendFile<CR>
+nnoremap <silent> <leader>rl :TREPLSendLine<CR>
+"" leave terminal insert mode
+tnoremap <silent> <leader><esc> <C-\><C-n><esc><CR>
 
 " theme
 syntax enable " enable syntax highlight
