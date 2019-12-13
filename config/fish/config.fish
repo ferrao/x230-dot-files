@@ -13,6 +13,10 @@ alias claer="clear"
 # Starship
 starship init fish | source
 
+# Sane auto completion key bindings
+bind \c] accept-autosuggestion 
+bind \t complete 
+
 # make sure awt works with bspwm
 set -U _JAVA_AWT_WM_NONREPARENTING 1
 
