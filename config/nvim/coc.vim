@@ -1,4 +1,7 @@
-" Some servers have issues with backup files, see #649
+" Extensions to instal
+let g:coc_global_extensions = ['coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-elixir']
+
+"" Some servers have issues with backup files, see #649
 set nobackup
 set nowritebackup
 

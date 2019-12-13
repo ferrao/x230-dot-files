@@ -1,4 +1,4 @@
-set nocompatible
+
 filetype off
 
 call plug#begin()
@@ -45,7 +45,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'kassio/neoterm'
 
 " search/fuzzy finder
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " git
@@ -104,6 +103,7 @@ set directory=~/.vim/tmp
 
 " terminal
 set termguicolors " enable true colors
+let g:neoterm_shell='fish'
 let $GIT_EDITOR = 'nvr -cc split --remote-wait'
 let $EDITOR = 'nvr -l' " prevent nested vim editors inside the temrinal
 nnoremap <silent> <leader>t :vertical botright Ttoggle<CR><C-w>l
@@ -136,11 +136,8 @@ nmap <leader>PP :call NormalMode()<CR>
 
 " jsx
 "" For strict usage in jsx files
-"let g:jsx_ext_required = 1
-"let g:mta_filetypes = { 'javascript.jsx' : 1 }
-"" More JSX relaxed settings
-let g:jsx_ext_required = 0
-let g:mta_filetypes = { 'javascript.jsx' : 1, 'javascript': 1 }
+let g:jsx_ext_required = 1
+let g:mta_filetypes = { 'javascript.jsx' : 1 }
 
 " emmet-vim
 let g:user_emmet_leader_key='<C-e>' " leader + comma(,) expands emmet
