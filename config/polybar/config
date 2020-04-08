@@ -1,6 +1,4 @@
-;==========================================================
-;
-;
+;========================================================== 
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
 ;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
 ;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
@@ -53,7 +51,7 @@ font-0 = Misc Fixed:pixelsize=13;1
 font-1 = Unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = Wuncon Siji:pixelsize=10;1
 
-modules-left = bspwm xwindow
+modules-left = bspwm xwindow 
 modules-center = date
 modules-right = filesystem memory cpu temperature battery wlan wip eth eip powermenu
 
@@ -97,7 +95,37 @@ font-0 = Misc Fixed:pixelsize=13;1
 font-1 = Unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = Wuncon Siji:pixelsize=10;1
 
-modules-left = bspwm
+modules-left = bspwm xwindow
+modules-center = date
+modules-right = menuapps
+
+[module/menuapps]
+type = custom/menu
+expand-right = true
+label-open = Apps
+label-close = X
+label-separator =" | "
+
+; "menu-LEVEL-N" has the same properties as "label-NAME" with
+; the additional "exec" property
+;
+; Available exec commands:
+;   menu-open-LEVEL
+;   menu-close
+; Other commands will be executed using "/bin/sh -c $COMMAND"
+
+menu-0-0 = System
+menu-0-0-exec = menu-open-1
+menu-0-1 = Apps
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = Sound Control
+menu-1-0-exec = pauvcontrol &
+menu-1-1 = WiFi
+menu-1-1-exec = wpa_gui &
+
+menu-2-0 = Image Editor
+menu-2-0-exec = gthumb &
 
 [module/xwindow]
 type = internal/xwindow

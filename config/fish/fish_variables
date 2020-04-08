@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR PASSWORD_STORE_X_SELECTION:primary
+SETUVAR --export JAVA_HOME:/usr/lib/jvm/default\x2druntime
+SETUVAR --export PASSWORD_STORE_X_SELECTION:primary
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/ferrao/\x2elocal/share/z/data
@@ -10,6 +11,7 @@ SETUVAR _JAVA_AWT_WM_NONREPARENTING:1
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -21,6 +23,7 @@ SETUVAR fish_color_error:ff0000
 SETUVAR fish_color_escape:00a6b2
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2
@@ -38,4 +41,4 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/home/ferrao/\x2econfig/nvm/12\x2e13\x2e1/bin\x1e/home/ferrao/\x2econfig/nvm/10\x2e15\x2e2/bin
+SETUVAR fish_user_paths:/home/ferrao/\x2econfig/nvm/12\x2e16\x2e1/bin\x1e/home/ferrao/\x2econfig/nvm/10\x2e15\x2e2/bin
