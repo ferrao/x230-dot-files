@@ -2,7 +2,7 @@
 starship init fish | source
 
 # Remove the useless Caps Lock key
-setxkbmap -layout us -option ctrl:nocaps
+setxkbmap -layout us -variant altgr-intl -option ctrl:nocaps
 
 # Sane auto completion key bindings
 bind \c] accept-autosuggestion
