@@ -6,15 +6,10 @@ else
 fi
 
 bspc monitor LVDS1 -d 1 2 3 4 5 6
-if ! $SINGLE_DISPLAY; then
-	# Setup for dual monitors
-	~/.screenlayout/home.sh
-	bspc monitor DP1 -d 7 8 9
 
-	# Make sure monitors are in the right order
-	if ! bspc query --monitors --names | head -1 | grep LVDS1; then
-		bspc monitor LVDS1 --swap DP1
-	fi
+# Setup for dual monitors
+if ! $SINGLE_DISPLAY; then
+	~/.config/bspwm/hotplug_monitor.sh
 fi
 
 bspc config remove_disabled_monitor true
