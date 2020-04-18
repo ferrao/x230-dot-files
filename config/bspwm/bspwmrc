@@ -1,16 +1,4 @@
 #! /bin/sh -x
-if xrandr -q | grep -w connected | grep DP1; then
-	SINGLE_DISPLAY="false"
-else
-	SINGLE_DISPLAY="true"
-fi
-
-bspc monitor LVDS1 -d 1 2 3 4 5 6
-
-# Setup for dual monitors
-if ! $SINGLE_DISPLAY; then
-	~/.config/bspwm/hotplug_monitor.sh
-fi
 
 bspc config remove_disabled_monitor true
 bspc config remove_unplugged_monitor true
@@ -32,7 +20,8 @@ bspc config focus_follows_pointer true
 #bspc rule -a Kupfer.py focus=on
 #bspc rule -a Screenkey manage=off
 
-feh --bg-fill $HOME/Images/backgrounds/default.jpg
-$HOME/.config/polybar/launch.sh
+# Setup monitors
+~/.config/bspwm/hotplug_monitor.sh
+
 /usr/bin/blueman-tray &
 wmname LG3D

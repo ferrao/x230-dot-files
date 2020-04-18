@@ -1,8 +1,14 @@
-# Starship
-starship init fish | source
+#
+# Use bash to run shkd commands
+#
+set -U SXHKD_SHELL /usr/bin/bash
 
 # Remove the useless Caps Lock key
 setxkbmap -layout us -variant altgr-intl -option ctrl:nocaps
+
+# Starship
+starship init fish | source
+
 
 # Sane auto completion key bindings
 bind \c] accept-autosuggestion
@@ -10,6 +16,7 @@ bind \t complete
 
 # make sure awt works with bspwm
 set -U _JAVA_AWT_WM_NONREPARENTING 1
+set -U _JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djdk.gtk.version=3"
 
 # send to clipboard pass manager
 set -U PASSWORD_STORE_X_SELECTION primary
