@@ -1,0 +1,9 @@
+# ALSA
+"amixer set Master toggle"
+	XF86AudioMute
+
+"amixer set Master 5%-"
+	XF86AudioLowerVolume
+
+"amixer set Master 5%+"
+	XF86AudioRaiseVolume
