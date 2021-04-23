@@ -2,9 +2,6 @@
 # Custom Paths 
 #
 
-# Fuzzy File Finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Node Path
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -13,8 +10,5 @@ export NVM_DIR="$HOME/.nvm"
 # Ruby Path
 export PATH=$PATH:/home/ferrao/.gem/ruby/2.6.0/bin
 
-# Python Path
+# Local Path
 export PATH=$PATH:/home/ferrao/.local/bin
-
-# Z
-[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
